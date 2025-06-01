@@ -33,7 +33,7 @@
 
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/hero-img/hero-img.png");
+    url("./img/hero-img/hero-img.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,7 +66,7 @@
 
 #about-products {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/about-page/duck-product-img.jpeg");
+    url("./img/about-page/duck-product-img.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,7 +74,7 @@
 
 #about-services {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/about-page/duck-service-img.png");
+    url("./img/about-page/duck-service-img.png");
 }
 
 .product-card-img {
@@ -88,7 +88,7 @@
 
 #error-page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/bg/cool-duck-bg.png");
+    url("./img/bg/cool-duck-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
