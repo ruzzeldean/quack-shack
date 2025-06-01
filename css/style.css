@@ -48,7 +48,7 @@
 }
 
 #about-img-1 {
-  background-image: url("/img/logo/duck.png");
+  background-image: url("./img/logo/duck.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
