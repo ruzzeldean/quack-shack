@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quack Shack</title>
+  <link rel="shortcut icon" href="img/logo/duck.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="./">Quack Shack</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu" aria-controls="navMenu" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navMenu" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title pe-5" id="offcanvasNavbarLabel">Quack Shack</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 text-dark">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./products.html">Products</a></li>
+                      <li><a class="dropdown-item" href="./service.html">Service</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacts.html">Contacts</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                      <i class="bi bi-person"></i>
+                      Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                      <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#registrationModal">Register</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bi bi-cart-fill"></i>
+                      <span class="d-lg-none">Cart</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/ruzzeldean/quack-shack" target="_blank">
+                      <i class="bi bi-github"></i>
+                      <span class="d-lg-none">Source Code</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main class="lead">
+      <section class="hero-section d-flex justify-content-center align-items-center py-5 text-white text-center">
+        <div class="container py-5">
+          <div class="py-lg-5">
+            <h1 class="display-3 fw-semibold">About us</h1>
+            <p>Your one-stop shop for all things duck-inspired.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row row-gap-3">
+            <div id="about-img-1" class="col-md-4 p-5">
+            </div>
+            <div class="col-md-8 pt-3 px-4">
+              <h2 class="display-6 fw-semibold text-center text-md-start">About Quack Shack</h2>
+              <p class="fst-italic text-muted mb-4 text-center text-md-start">"Because life is better with a duck."</p>
+
+              <p class="lh-base">Quack Shack was born from a love for ducks and their quirky charm. We're passionate about bringing you high-quality, duck-themed products and services that add a splash of fun to your life.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light text-center">
+        <div class="container px-4 py-5">
+          <h2 class="display-6 fw-semibold mb-3">Our Mission</h2>
+          <p class="fst-italic">“To celebrate ducks with eco-friendly, creative products and exceptional services.”</p>
+        </div>
+      </section>
+
+      <section class="py-5 text-light text-center">
+        <div class="container">
+          <div class="row row-gap-3">
+            <div class="col-12">
+              <h2 class="display-6 fw-semibold text-dark">Shop Now</h2>
+            </div>
+
+            <div class="col-md-6">
+              <div id="about-products" class="px-3 rounded">
+                <a href="products.html" class="btn btn-outline-warning btn-lg">View Our Products</a>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div id="about-services" class="px-3 rounded">
+                <a href="services.html" class="btn btn-outline-warning btn-lg">View our Service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row row-gap-4">
+          <div class="col-md-4">
+            <div class="h-100">
+              <h2 class="mb-4">Quack Shack</h2>
+              <p class="">&copy; 2025 Quack Shack. <a class="text-warning" href="https://github.com/ruzzeldean/quack-shack/blob/main/LICENSE">MIT</a> Licensed. For educational purposes only.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="h-100">
+              <h2 class="mb-3">Quick Links</h2>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./products.html">Products</a></li>
+                    <li><a class="dropdown-item" href="./service.html">Service</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./contacts.html">Contacts</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-person pe-1"></i>
+                    Account
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                    <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#registrationModal">Register</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-cart-fill pe-1"></i>
+                    Cart
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/ruzzeldean/quack-shack" target="_blank">
+                    <i class="bi bi-github pe-1"></i>
+                    Source Code
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="h-100">
+              <h2 class="mb-3">Get in Touch</h2>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">quack.shack@gmail.com</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">+63 917 123 4567</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">404 Duck St. Quezon City, Philippines</a>
+                </li>
+                <div class="d-flex gap-3 fs-5">
+                  <li>
+                    <a class="nav-link" href="https://facebook_com/quack.shack"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="https://t.me/quack_shack"><i class="bi bi-telegram"></i></a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="https://x.com/quack_shack"><i class="bi bi-twitter-x"></i></a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h2 id="loginModalLabel" class="modal-title fs-4">Account Login</h2>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="login-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="login-email" placeholder="Enter email" required>
+              </div>
+
+              <div class="mb-5">
+                <label for="login-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="login-password" placeholder="Enter password" required>
+              </div>
+
+              <div class="text-end">
+                <input type="submit" class="btn btn-warning">
+
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="registrationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h2 id="registrationModalLabel" class="modal-title fs-4">Account Registration</h2>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="first-name" placeholder="Enter First Name" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="middle-name" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="middle-name" placeholder="Enter Middle Name">
+              </div>
+
+              <div class="mb-3">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="registration-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="registration-email" placeholder="Enter email" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="registration-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="registration-password" placeholder="Enter password" required>
+              </div>
+
+              <div class="mb-5">
+                <label for="confirm-password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password" required>
+              </div>
+
+              <div class="text-end">
+                <input type="submit" class="btn btn-warning">
+
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

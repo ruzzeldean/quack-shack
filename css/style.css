@@ -1,0 +1,113 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+.offcanvas {
+  --bs-offcanvas-width: auto;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-close {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/hero-img/hero-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#home-page, #error-page {
+  min-height: 100dvh;
+}
+
+#about-img {
+  max-width: 200px;
+}
+
+#about-img-1 {
+  background-image: url("/img/logo/duck.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about-products,
+#about-services {
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-content: center;
+}
+
+#about-products {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/about-page/duck-product-img.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about-services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/about-page/duck-service-img.png");
+}
+
+.product-card-img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+#contact-form {
+  max-width: 600px;
+}
+
+#error-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/bg/cool-duck-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-control:focus {
+  --bs-focus-ring-color: rgba(255, 193, 7, 0.25);
+  border-color: var(--bs-warning);
+  box-shadow: 0 0 0 0.25rem var(--bs-focus-ring-color);
+}
+
+/* Media query for nav in home */
+@media screen and (max-width: 991px) {
+  #home .offcanvas .nav-link {
+    color: var(--bs-gray);
+  }
+  
+  #home .offcanvas .nav-link.active,
+  #home .offcanvas .nav-link:hover {
+    color: var(--bs-dark);
+  }
+}

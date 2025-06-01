@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quack Shack</title>
+  <link rel="shortcut icon" href="img/logo/duck.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="./">Quack Shack</a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu" aria-controls="navMenu" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="navMenu" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title pe-5" id="offcanvasNavbarLabel">Quack Shack</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 text-dark">
+                <li class="nav-item">
+                  <a class="nav-link" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active" aria-current="page" href="./products.html">Products</a></li>
+                    <li><a class="dropdown-item" href="./service.html">Service</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacts.html">Contacts</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-person"></i>
+                    Account
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                    <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#registrationModal">Register</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-cart-fill"></i>
+                    <span class="d-lg-none">Cart</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/ruzzeldean/quack-shack" target="_blank">
+                    <i class="bi bi-github"></i>
+                    <span class="d-lg-none">Source Code</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="">
+      <section class="hero-section d-flex justify-content-center align-items-center py-5 text-white text-center">
+        <div class="container py-5">
+          <div class="py-lg-5">
+            <h1 class="display-3 fw-semibold">Products</h1>
+            <p class="lead">Quack-Approved Products for You and Your Ducks.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container py-5">
+          <h2 class="display-4 fw-semibold mb-4 text-center text-md-start">Featured Product</h2>
+
+          <div class="rounded shadow-lg">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="p-3 pe-md-0">
+                  <img class="img-fluid rounded" src="./img/products/duck-lamp.png" alt="">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 pt-0 pb-3 pt-md-2 ps-md-0">
+                  <h2 class="display-5 fw-medium">Soft Glow Duck Lamp</h2>
+                  <p class="lead mb-4">A cute duck-shaped night lamp with a warm, calming glow — perfect for desks, shelves, or bedtime buddies.</p>
+
+                  <h4>Php 600.00</h4>
+
+                  <ul class="list-unstyled mt-3">
+                    <li>
+                      Soft, Warm Glow
+                    </li>
+                    <li>
+                      Rechargeable Battery
+                    </li>
+                    <li>
+                      Cute
+                    </li>
+                  </ul>
+
+                  <div class="mt-4 d-flex flex-wrap flex-md-nowrap gap-2">
+                    <button class="btn btn-warning btn-lg text-nowrap w-100">Add to Cart</button>
+                    <button class="btn btn-outline-secondary btn-lg w-100 text-nowrap">Add to Wishlist</button>
+                  </div>
+
+                  <div class="mt-4">
+                    <h5>Shipping & Returns</h5>
+                    <p class="text-muted">Free shipping on orders over Php 500. <br>30-day return policy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <h3 class="display-5 fw-normal mb-4">For Cute Ducks</h3>
+
+          <div class="row row-gap-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="h-100">
+                <div class="card bg-light border-0 d-flex flex-column h-100 shadow-lg">
+                  <img class="card-img-top product-card-img" src="./img/products/duck-diaper.png" alt="Duck Diaper">
+                  
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title mb-2">Blue Polka Dot Duck Diaper</h3>
+                    <p class="card-text mb-3">Soft, reusable diaper with a cute polka dot design — comfy and mess-free for indoor ducks.</p>
+                    <h5 class="mt-auto mb-4">Php 400.00</h5>
+
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-warning w-100">
+                        <i class="bi bi-cart-plus-fill pe-1"></i>
+                        Add to Cart
+                      </button>
+
+                      <button class="btn btn-outline-secondary rounded">
+                        <i class="bi bi-bookmark-heart-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="h-100">
+                <div class="card bg-light border-0 d-flex flex-column h-100 shadow-lg">
+                  <img class="card-img-top product-card-img" src="./img/products/duck-hat.png" alt="Duck Hat">
+                  
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title mb-2">Classic Brown Fedora for Ducks</h3>
+                    <p class="card-text mb-3">Stylish fedora for ducks — perfect for classy strolls and photo ops.</p>
+                    <h5 class="mt-auto mb-4">Php 300.00</h5>
+
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-warning w-100">
+                        <i class="bi bi-cart-plus-fill pe-1"></i>
+                        Add to Cart
+                      </button>
+
+                      <button class="btn btn-outline-secondary rounded">
+                        <i class="bi bi-bookmark-heart-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="h-100">
+                <div class="card bg-light border-0 d-flex flex-column h-100 shadow-lg">
+                  <img class="card-img-top product-card-img" src="./img/products/duck-scarf.png" alt="Scarf for Ducks">
+                  
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title mb-2">Mini Knitted Duck Scarf</h3>
+                    <p class="card-text mb-3">Keep your duck cozy and stylish with this soft, lightweight scarf.</p>
+                    <h5 class="mt-auto mb-4">Php 200.00</h5>
+
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-warning w-100">
+                        <i class="bi bi-cart-plus-fill pe-1"></i>
+                        Add to Cart
+                      </button>
+
+                      <button class="btn btn-outline-secondary rounded">
+                        <i class="bi bi-bookmark-heart-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <h3 class="display-5 fw-normal mb-4">For Duck Owners</h3>
+
+          <div class="row row-gap-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="h-100">
+                <div class="card bg-light border-0 d-flex flex-column h-100 shadow-lg">
+                  <img class="card-img-top product-card-img" src="./img/products/duck-lamp.png" alt="Duck Lamp">
+                  
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title mb-2">Soft Glow Duck Lamp</h3>
+                    <p class="card-text mb-3">A cute duck-shaped night lamp with a warm, calming glow — perfect for desks, shelves, or bedtime buddies.</p>
+                    <h5 class="mt-auto mb-4">Php 600.00</h5>
+
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-warning w-100">
+                        <i class="bi bi-cart-plus-fill pe-1"></i>
+                        Add to Cart
+                      </button>
+
+                      <button class="btn btn-outline-secondary rounded">
+                        <i class="bi bi-bookmark-heart-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="h-100">
+                <div class="card bg-light border-0 d-flex flex-column h-100 shadow-lg">
+                  <img class="card-img-top product-card-img" src="./img/products/duck-t-shirt.jpg" alt="Duck T-shirt">
+                  
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title mb-2">Great Wave Duck Tee (Black)</h3>
+                    <p class="card-text mb-3">Bold black tee featuring a rubber duck riding a Hokusai-style wave — a must-have for duck lovers with taste.</p>
+                    <h5 class="mt-auto mb-4">Php 400.00</h5>
+
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-warning w-100">
+                        <i class="bi bi-cart-plus-fill pe-1"></i>
+                        Add to Cart
+                      </button>
+
+                      <button class="btn btn-outline-secondary rounded">
+                        <i class="bi bi-bookmark-heart-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="h-100">
+                <div class="card bg-light border-0 d-flex flex-column h-100 shadow-lg">
+                  <img class="card-img-top product-card-img" src="./img/products/duck-keychain.jpg" alt="Duck Keychain">
+                  
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title mb-2">Sweet Little Duck Keychain</h3>
+                    <p class="card-text mb-3">Tiny, adorable, and oh-so-cuddly! This cute duck keychain will brighten up your keys and your day.</p>
+                    <h5 class="mt-auto mb-4">Php 150.00</h5>
+
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-warning w-100">
+                        <i class="bi bi-cart-plus-fill pe-1"></i>
+                        Add to Cart
+                      </button>
+
+                      <button class="btn btn-outline-secondary rounded">
+                        <i class="bi bi-bookmark-heart-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row row-gap-4">
+          <div class="col-md-4">
+            <div class="h-100">
+              <h2 class="mb-4">Quack Shack</h2>
+              <p class="">&copy; 2025 Quack Shack. <a class="text-warning" href="https://github.com/ruzzeldean/quack-shack/blob/main/LICENSE">MIT</a> Licensed. For educational purposes only.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="h-100">
+              <h2 class="mb-3">Quick Links</h2>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Shop
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./products.html">Products</a></li>
+                    <li><a class="dropdown-item" href="./service.html">Service</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./contacts.html">Contacts</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-person pe-1"></i>
+                    Account
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                    <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#registrationModal">Register</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-cart-fill pe-1"></i>
+                    Cart
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/ruzzeldean/quack-shack" target="_blank">
+                    <i class="bi bi-github pe-1"></i>
+                    Source Code
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="h-100">
+              <h2 class="mb-3">Get in Touch</h2>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">quack.shack@gmail.com</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">+63 917 123 4567</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">404 Duck St. Quezon City, Philippines</a>
+                </li>
+                <div class="d-flex gap-3 fs-5">
+                  <li>
+                    <a class="nav-link" href="https://facebook_com/quack.shack"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="https://t.me/quack_shack"><i class="bi bi-telegram"></i></a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="https://x.com/quack_shack"><i class="bi bi-twitter-x"></i></a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h2 id="loginModalLabel" class="modal-title fs-4">Account Login</h2>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="login-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="login-email" placeholder="Enter email" required>
+              </div>
+
+              <div class="mb-5">
+                <label for="login-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="login-password" placeholder="Enter password" required>
+              </div>
+
+              <div class="text-end">
+                <input type="submit" class="btn btn-warning">
+
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="registrationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h2 id="registrationModalLabel" class="modal-title fs-4">Account Registration</h2>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="first-name" placeholder="Enter First Name" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="middle-name" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="middle-name" placeholder="Enter Middle Name">
+              </div>
+
+              <div class="mb-3">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="registration-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="registration-email" placeholder="Enter email" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="registration-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="registration-password" placeholder="Enter password" required>
+              </div>
+
+              <div class="mb-5">
+                <label for="confirm-password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password" required>
+              </div>
+
+              <div class="text-end">
+                <input type="submit" class="btn btn-warning">
+
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
